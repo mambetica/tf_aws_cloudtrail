@@ -5,8 +5,8 @@ resource "aws_cloudtrail" "cloudtrail" {
   enable_logging = "${var.enable_logging}"
   include_global_service_events = "${var.include_global_service_events}"
   is_multi_region_trail = "${var.is_multi_region_trail}"
-  cloud_watch_logs_role_arn = "${cloud_watch_logs_role_arn}"
-  cloud_watch_logs_group_arn = "${cloud_watch_logs_group_arn}"
+  cloud_watch_logs_role_arn = "${var.cloud_watch_logs_role_arn}"
+  cloud_watch_logs_group_arn = "${var.cloud_watch_logs_group_arn}"
   tags {
     Name = "${var.name}"
     Owner = "${var.owner}"
