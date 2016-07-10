@@ -24,3 +24,11 @@ variable "owner" {
   description = "Owner tag added to the VPC in order to identify who built the resource, defaults to 'Terraform'"
   default = "Terraform"
 }
+variable "cloud_watch_logs_role_arn" {
+  description = "Specifies the role for the CloudWatch Logs endpoint to assume to write to a user’s log group."
+  default = ""
+}
+variable "cloud_watch_logs_group_arn" {
+  description = "Specifies a log group name using an Amazon Resource Name (ARN), that represents the log group to which CloudTrail logs will be delivered."
+  default = ""
+}
