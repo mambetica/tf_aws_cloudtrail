@@ -20,6 +20,10 @@ variable "is_multi_region_trail" {
   description = "Specifies whether the trail is created in the current region or in all regions. Defaults to false"
   default = false
 }
+variable "enable_log_file_validation" {
+  description = "Specifies whether log file integrity validation is enabled. Defaults to false"
+  default = false
+}
 variable "owner" {
   description = "Owner tag added to the VPC in order to identify who built the resource, defaults to 'Terraform'"
   default = "Terraform"
